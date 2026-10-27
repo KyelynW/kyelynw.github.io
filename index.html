@@ -1,39 +1,100 @@
 <!DOCTYPE html>
-<!-- This line tells the browser: "this is a modern HTML page." -->
 <html lang="en">
-<!-- <html> wraps the whole page. lang="en" says the page is in English. -->
-
 <head>
-  <!-- The head holds information ABOUT the page. Visitors don't see it on the page itself. -->
-
   <meta charset="UTF-8">
-  <!-- Makes sure special characters (like é or emojis) display properly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kye | Service Designer & UX Strategist</title>
+  <meta name="description" content="Kye is a service designer and UX strategist who helps teams find and frame the right problem before designing the solution.">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Makes the page fit properly on phone screens. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <title>Kye | Portfolio</title>
-  <!-- This text appears on the browser tab. Change it to your name. -->
-
-  <style>
-    /* This is CSS. It controls how things LOOK. */
-    body {
-      font-family: Arial, sans-serif; /* the font */
-      background-color: #fafafa;      /* light grey background */
-      color: #1a1a1a;                 /* near-black text */
-      text-align: center;             /* center everything */
-      padding-top: 100px;             /* empty space at the top */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- The body holds everything visitors actually SEE on the page. -->
 
-  <h1>Hello, I'm Kye lyn</h1>
-  <!-- <h1> is the biggest heading. Replace the text with your own name. -->
+  <header class="site-header">
+    <a class="logo" href="index.html">Kye</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <p>My portfolio is coming soon.</p>
-  <!-- <p> is a paragraph of text. -->
+  <main>
+
+    <section class="hero">
+      <p class="hero-intro">Service designer and UX strategist</p>
+      <h1>I help teams find the right problem before they design the solution.</h1>
+      <p class="hero-sub">Research, discovery and workshop facilitation for tech, SaaS and consumer brands.</p>
+      <a class="button" href="#work">See my work</a>
+
+      <div class="sticky" aria-hidden="true">
+        <p>How might we make this easier for the people who use it?</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Selected work</h2>
+      <ul class="work-list">
+        <li>
+          <a href="case-study-1.html">
+            <h3>Case study title one</h3>
+            <p>One sentence on the problem you framed and what changed as a result.</p>
+          </a>
+        </li>
+        <li>
+          <a href="case-study-2.html">
+            <h3>Case study title two</h3>
+            <p>One sentence on the problem you framed and what changed as a result.</p>
+          </a>
+        </li>
+        <li>
+          <a href="case-study-3.html">
+            <h3>Case study title three</h3>
+            <p>One sentence on the problem you framed and what changed as a result.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="approach" class="section">
+      <h2>How I work</h2>
+      <div class="approach-grid">
+        <div>
+          <h3>Listen first</h3>
+          <p>I start with the people affected, through interviews and observation, so the team works from evidence instead of assumptions.</p>
+        </div>
+        <div>
+          <h3>Frame the problem</h3>
+          <p>I turn messy findings into a clear problem statement that everyone on the team can point to.</p>
+        </div>
+        <div>
+          <h3>Bring people along</h3>
+          <p>I run discovery workshops that get stakeholders aligned and make decisions faster.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="about-text">I'm a UI/UX and product designer who found my footing in the research and discovery side of design. I'm moving back to Singapore this October and looking for an in-house role where I can help shape what gets built, not only how it looks.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to talk about a role or a project? Send me a message.</p>
+      <a class="button" href="mailto:your-email@example.com">your-email@example.com</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kye</p>
+  </footer>
+
 </body>
 </html>
