@@ -28,7 +28,9 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-display);
   line-height: 1.15;
   margin: 0;
@@ -83,7 +85,7 @@ a:focus-visible,
 }
 
 /* ---------- Layout shared by main sections ---------- */
-main > section {
+main>section {
   max-width: var(--page-width);
   margin: 0 auto;
   padding-left: var(--gutter);
@@ -181,9 +183,36 @@ main > section {
 }
 
 .work-list a {
-  display: block;
+  display: grid;
+  gap: 1.25rem;
   padding: 1.5rem 0;
   text-decoration: none;
+}
+
+.work-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #e4e8e1;
+  border-radius: 0.25rem;
+}
+
+.work-list .work-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+@media (min-width: 50rem) {
+  .work-list a {
+    grid-template-columns: 18rem 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .work-list h3 {
