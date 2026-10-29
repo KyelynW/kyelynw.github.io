@@ -278,3 +278,54 @@ main>section {
   color: var(--ink-soft);
   font-size: 0.9rem;
 }
+
+/* About page */
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  align-items: center;
+}
+
+.about-photo {
+  flex: 0 0 340px;
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e4e4e4;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1 1 360px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  display: flex;
+  gap: 32px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.years {
+  flex: 0 0 120px;
+  font-weight: 600;
+}
+
+nav a[aria-current="page"] {
+  font-weight: 600;
+  text-decoration: underline;
+}

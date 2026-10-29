@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Kye Lyn</title>
+  <meta name="description"
+    content="About Kye Lyn, a service designer and UX strategist who helps teams find and frame the right problem before designing the solution.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>About page</h1>
-  <a href="index.html">Back to Home</a>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Kye Lyn</a>
+    <nav aria-label="Main">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section about-intro">
+      <div class="about-photo">[Photo of you]</div>
+      <div class="about-text">
+        <p class="hero-intro">About</p>
+        <h1>[One-line headline about how you work]</h1>
+        <p>[2 to 3 sentences: who you are, what kind of design you do, and what you are looking for next.]</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How I work</h2>
+      <div class="approach-grid">
+        <div>
+          <h3>Research and discovery</h3>
+          <p>[1 to 2 lines]</p>
+        </div>
+        <div>
+          <h3>Problem framing</h3>
+          <p>[1 to 2 lines]</p>
+        </div>
+        <div>
+          <h3>Facilitation</h3>
+          <p>[1 to 2 lines]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Background</h2>
+      <ul class="timeline">
+        <li>
+          <span class="years">[Years]</span>
+          <span>[Role, company or place: one line]</span>
+        </li>
+        <li>
+          <span class="years">[Years]</span>
+          <span>[Role, company or place: one line]</span>
+        </li>
+        <li>
+          <span class="years">[Years]</span>
+          <span>[Role, company or place: one line]</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to talk about a role or a project? Send me a message.</p>
+      <a class="button" href="mailto:your-email@example.com">your-email@example.com</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kye Lyn</p>
+  </footer>
+
 </body>
+
 </html>
