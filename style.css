@@ -575,10 +575,12 @@ nav a[aria-current="page"] {
   --cs-image: rgba(0, 0, 0, 0.08);
   --cs-muted: #5a6470;
 
-  padding-top: 0;
-  padding-bottom: 0;
-  border-top: none;
-  border-bottom: none;
+  box-sizing: border-box;
+  width: min(992px, calc(100% - 48px));
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
 }
 
 /* Top of the page */
@@ -633,7 +635,7 @@ nav a[aria-current="page"] {
   border-bottom: 1px solid var(--cs-line);
 }
 
-.cs-block .cs-meta > div {
+.cs-block .cs-meta>div {
   flex: 1 1 180px;
   min-width: 0;
 }
@@ -701,7 +703,7 @@ nav a[aria-current="page"] {
   min-width: 0;
 }
 
-.cs-block .cs-body > *:last-child {
+.cs-block .cs-body>*:last-child {
   margin-bottom: 0;
 }
 
