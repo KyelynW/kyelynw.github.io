@@ -479,3 +479,7 @@ nav a[aria-current="page"] {
     transform: none;
   }
 }
+
+.about-text h1 {
+  margin-bottom: 24px;
+} 
