@@ -400,6 +400,11 @@ main>section {
   color: #555;
 }
 
+.carousel-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 @media (max-width: 700px) {
   .carousel-item {
     flex: 0 0 100%;
