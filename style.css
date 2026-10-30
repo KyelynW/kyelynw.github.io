@@ -564,3 +564,245 @@ nav a[aria-current="page"] {
 .about-text h1 {
   margin-bottom: 24px;
 }
+
+/* Case study pages */
+.cs-back {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cs-back:hover {
+  text-decoration: underline;
+}
+
+.cs-header h1,
+.cs-header .cs-summary {
+  max-width: 880px;
+}
+
+.cs-summary {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Quick facts */
+.cs-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
+  margin: 0;
+  padding: 24px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.cs-meta div {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.cs-meta dt {
+  margin-bottom: 8px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.cs-meta dd {
+  margin: 0;
+}
+
+/* Images */
+.cs-hero,
+.cs-figures figure,
+.cs-wide {
+  margin: 0;
+}
+
+.cs-hero img,
+.cs-figures img,
+.cs-wide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  background: #e4e4e4;
+}
+
+.cs-hero img {
+  height: 480px;
+}
+
+.cs-figures img {
+  height: 240px;
+}
+
+.cs-wide img {
+  height: 360px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Two-column content rows */
+.cs-row {
+  display: flex;
+  gap: 24px 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 2px solid #ccc;
+}
+
+.cs-row > h2 {
+  flex: 0 0 240px;
+  margin: 0;
+  font-size: 24px;
+}
+
+.cs-body {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.cs-body p {
+  margin: 0 0 16px;
+}
+
+.cs-body p:last-child {
+  margin-bottom: 0;
+}
+
+.cs-list {
+  margin: 0;
+  padding-left: 24px;
+  line-height: 1.8;
+}
+
+.cs-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.cs-figures figure {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.cs-wide {
+  margin-top: 24px;
+}
+
+/* Insight and outcome boxes */
+.cs-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cs-card {
+  padding: 24px;
+  border: 2px solid #999;
+  background: #f2f2f2;
+}
+
+.cs-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.cs-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cs-card .cs-metric {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Next case study */
+.cs-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px;
+  border: 2px solid #999;
+  background: #e4e4e4;
+}
+
+.cs-next p {
+  margin: 0;
+}
+
+.cs-next-label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.cs-next-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .cs-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cs-hero img {
+    height: 220px;
+  }
+
+  .cs-figures img {
+    height: 200px;
+  }
+
+  .cs-wide img {
+    height: 220px;
+  }
+
+  .cs-row {
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .cs-row > h2 {
+    flex: none;
+    font-size: 22px;
+  }
+
+  .cs-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cs-card {
+    padding: 20px;
+  }
+
+  .cs-next {
+    padding: 28px 24px;
+  }
+}
