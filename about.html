@@ -29,6 +29,7 @@
   <main>
 
     <section class="section about-intro">
+      <!-- Replace this div with: <img src="images/profile.jpg" alt="Photo of Kye"> -->
       <div class="about-photo">[Photo of you]</div>
       <div class="about-text">
         <p class="hero-intro">About</p>
@@ -56,21 +57,78 @@
     </section>
 
     <section class="section">
-      <h2>Background</h2>
-      <ul class="timeline">
-        <li>
-          <span class="years">[Years]</span>
-          <span>[Role, company or place: one line]</span>
-        </li>
-        <li>
-          <span class="years">[Years]</span>
-          <span>[Role, company or place: one line]</span>
-        </li>
-        <li>
-          <span class="years">[Years]</span>
-          <span>[Role, company or place: one line]</span>
-        </li>
-      </ul>
+      <div class="lists-grid">
+        <div>
+          <h2>Skillsets</h2>
+          <ul class="plain-list">
+            <li>[Soft skill]</li>
+            <li>[Soft skill]</li>
+            <li>[Soft skill]</li>
+            <li>[Soft skill]</li>
+            <li>[Soft skill]</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Tools</h2>
+          <ul class="plain-list">
+            <li>[Tool]</li>
+            <li>[Tool]</li>
+            <li>[Tool]</li>
+            <li>[Tool]</li>
+            <li>[Tool]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Beyond design</h2>
+      <p class="section-intro">[1 to 2 sentences: digital art as a passion hobby, and what it means to you.]</p>
+
+      <div class="carousel">
+        <button type="button" class="carousel-btn" id="carousel-prev" aria-label="Previous images">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 5 8 12 15 19" />
+          </svg>
+        </button>
+
+        <ul class="carousel-track" id="carousel-track">
+          <li class="carousel-item">
+            <img class="carousel-img" src="images/art-1.jpg" alt="Short description of artwork 1">
+            <p class="carousel-caption">[Title, tool used]</p>
+          </li>
+          <li class="carousel-item">
+            <img class="carousel-img" src="images/art-2.jpg" alt="Short description of artwork 2">
+            <p class="carousel-caption">[Title, tool used]</p>
+          </li>
+          <li class="carousel-item">
+            <img class="carousel-img" src="images/art-3.jpg" alt="Short description of artwork 3">
+            <p class="carousel-caption">[Title, tool used]</p>
+          </li>
+          <li class="carousel-item">
+            <img class="carousel-img" src="images/art-4.jpg" alt="Short description of artwork 4">
+            <p class="carousel-caption">[Title, tool used]</p>
+          </li>
+          <li class="carousel-item">
+            <img class="carousel-img" src="images/art-5.jpg" alt="Short description of artwork 5">
+            <p class="carousel-caption">[Title, tool used]</p>
+          </li>
+          <li class="carousel-item">
+            <img class="carousel-img" src="images/art-6.jpg" alt="Short description of artwork 6">
+            <p class="carousel-caption">[Title, tool used]</p>
+          </li>
+        </ul>
+
+        <button type="button" class="carousel-btn" id="carousel-next" aria-label="Next images">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 5 16 12 9 19" />
+          </svg>
+        </button>
+      </div>
+
+      <p class="carousel-count" id="carousel-count">Showing 1 to 3 of 6</p>
     </section>
 
     <section id="contact" class="section">
