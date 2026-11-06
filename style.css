@@ -745,6 +745,24 @@ nav a[aria-current="page"] {
   height: 360px;
 }
 
+.cs-block .cs-wide img {
+  height: 360px;
+}
+
+/* Large process image */
+.cs-block .cs-figure--large {
+  margin-top: 24px;
+}
+
+.cs-block .cs-figure--large a {
+  display: block;
+}
+
+.cs-block .cs-figure--large img {
+  height: auto;
+  object-fit: contain;
+}
+
 /* Insight and outcome boxes */
 .cs-block .cs-cards {
   display: grid;
