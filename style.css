@@ -883,7 +883,7 @@ nav a[aria-current="page"] {
   }
 }
 
-//styling for identation of point forms
+/*styling for identation of point forms*/
 .cs-list-indented {
   margin-top: 8px;
   padding-left: 28px;
