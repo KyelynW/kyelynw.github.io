@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case study title | Kye Lyn</title>
+  <meta name="description" content="One sentence on the problem you framed and what changed as a result.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Kye Lyn</a>
+    <nav aria-label="Main">
+      <a href="index.html#work" aria-current="page">Work</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="section cs-block">
+
+      <!-- Title, quick facts and hero image -->
+      <div class="cs-top">
+        <a class="cs-back" href="index.html#work">&larr; All work</a>
+        <p class="cs-kicker">Mobile App &middot; Product Design</p>
+        <h1 class="cs-title">Remote Eye Screening</h1>
+        <p class="cs-summary">Transforming a mobile device into an intuitive eye-screening tool through improved image
+          quality and a guided capture experience.</p>
+
+        <dl class="cs-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>UI/UX Designer</dd>
+          </div>
+          <div>
+            <dt>Timeline</dt>
+            <dd>6 Months</dd>
+          </div>
+          <div>
+            <dt>Team</dt>
+            <dd>1 Designer, 2 Developer, 1 PM</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Adobe XD, Illustrator</dd>
+          </div>
+        </dl>
+
+        <figure class="cs-figure cs-hero">
+          <img src="images/case-study-3-hero.jpg" alt="Describe what the image shows">
+        </figure>
+      </div>
+
+      <!-- Overview -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Overview</h2>
+        <div class="cs-body">
+          <p class="cs-text"><strong>The initial problem statement.</strong> Triaging of eye conditions are generally
+            poorly conducted. As a result, the tertiary ophthalmology service is overburdened with non-urgent cases,
+            while true ocular emergencies are still occasionally missed.</p>
+          <p class="cs-text">To tackle the initial problem statement, our stakeholders had developed a prototype of a
+            portable eye screening tool: a 3D-printed attachment that turns any mobile phone into an eye screening
+            device.
+          </p>
+          <p class="cs-text">In the current process, the tool is attached to the phone and aligned with its camera, a
+            photo of the
+            elderly person's eye is taken, and the image is sent to an ophthalmologist for evaluation and any necessary
+            follow-up.</p>
+        </div>
+      </section>
+
+      <!-- Challenge -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Challenge</h2>
+        <div class="cs-body">
+          <p class="cs-text">After developing the 3D-printed portable
+            eye-screening tool, our stakeholders approached us to address two key challenges: capturing clear, usable
+            eye images for assessment by an ophthalmologist, and simplifying the screening process, which currently
+            requires
+            two people to complete.
+
+          <p class="cs-text"><strong>1. How might we help users capture clear, high-quality eye images on the first
+              attempt using the 3D-printed eye screening tool paired with a phone? </strong>
+          </p>
+          <p class="cs-text"><strong>2. How might we make the eye-screening process intuitive and easy to complete for
+              both the person taking the photo and the person being screened?</strong></p>
+
+        </div>
+      </section>
+
+      <!-- Approach -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Approach</h2>
+        <div class="cs-body">
+          <p class="cs-text">Working closely with ophthalmologists, we first gathered domain expertise and clarified
+            requirements to ensure the solution addressed real clinical needs. We then conducted user testing to
+            validate assumptions, uncover usability challenges, and provide evidence to guide design decisions centred
+            around both users and healthcare professionals.</p>
+          <figure class="cs-figure cs-figure--large">
+            <a href="images/case-study-3-approach-process.jpg" target="_blank" rel="noopener">
+              <img src="images/case-study-3-approach-process.jpg" alt="Describe the process shown in the diagram"
+                loading="lazy">
+            </a>
+            <figcaption class="cs-caption">5 step design thinking process</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Key insights -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Key insights</h2>
+        <div class="cs-body">
+          <p class="cs-text"><strong>Caregivers are the primary users.</strong> User testing helped us identify
+            caregivers as the primary users, responsible for operating the device and capturing patients' eye images.
+            Patients aged 60 and above are the secondary users whose eye images are captured, with the app supporting up
+            to four patient profiles. </p>
+          <p class="cs-text"></p>
+          <p class="cs-text"><strong>Not all elderly patients have access to smartphones.</strong> More than half of our
+            interviewees shared that their elderly parents or grandparents either lacked a smartphone or were not
+            tech-savvy. To address this, made sure our mobile app could create and switch between up to four patient
+            profiles.</p>
+        </div>
+      </section>
+
+      <!-- Solution -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Solution</h2>
+        <div class="cs-body">
+          <p class="cs-text">We designed a mobile application to complement the 3D-printed portable eye-screening tool,
+            simplifying image capture while ensuring sufficient image quality for assessment.</p>
+          <figure class="cs-figure cs-wide">
+            <img src="images/case-study-3-solution-1.jpg" alt="Describe what the image shows" loading="lazy">
+            <figcaption class="cs-caption">Concept of 3D-printed portable eye-screening tool</figcaption>
+          </figure>
+          <p class="cs-text"></p>
+
+          <p class="cs-text">The key features are:</p>
+          <p class="cs-text"><strong>1. AI/ML-powered auto-capture:</strong> Automatically captures the eye image when
+            sufficient image quality is detected, reducing guesswork and repeated attempts. This helps users obtain
+            clearer, usable images for ophthalmologists to assess.</p>
+          <p class="cs-text"><strong>2. Guided onboarding:</strong> Provides an in-app guided tutorial on first use,
+            with step-by-step instructions on how to operate the device and capture eye images. This helps users
+            understand the process from the start, reducing the learning curve and making eye screening easier to
+            complete.</p>
+          <p class="cs-text">Together, these features simplify the screening process, allowing users to focus on
+            positioning the device and capturing the eye image while the app guides them through the steps and handles
+            the capture automatically.</p>
+          <figure class="cs-figure cs-wide">
+            <img src="images/case-study-3-solution-2.jpg" alt="Describe what the image shows" loading="lazy">
+            <figcaption class="cs-caption">Sample image of eye capture</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Outcome -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Outcome</h2>
+        <div class="cs-body">
+          <p class="cs-text">The proof of concept demonstrated how a guided mobile experience could support clearer eye
+            image capture and simplify the screening process. With further development and validation, the solution
+            could be deployed in community screening programmes to extend access to eye screening.</p>
+        </div>
+      </section>
+
+      <!-- Takeaways -->
+      <section class="cs-row">
+        <h2 class="cs-heading">Takeaways</h2>
+        <div class="cs-body">
+          <p class="cs-text">Designing a mobile application to support eye screening at home was an eye-opening
+            experience. Working closely with ophthalmologists and users throughout the design thinking process taught me
+            the importance of designing around real user needs and behaviours.</p>
+          <p class="cs-text"></p>
+          <p class="cs-text">For applications used infrequently, such as once every three months, it is important to
+            minimise the need for users to relearn the experience. Providing alternative login methods, guided
+            onboarding, and contextual prompts can help users navigate the application confidently, even after long
+            periods of inactivity.</p>
+          <p class="cs-text">Note: Regular eye checkups are recommended every three months for this use case.</p>
+        </div>
+      </section>
+
+      <!-- Next Project -->
+      <div class="cs-next">
+        <div>
+          <p class="cs-kicker">Next project</p>
+          <p class="cs-next-title">Virtual Digital Innovation Lab</p>
+        </div>
+        <a class="button" href="case-study-4.html">Read next &rarr;</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kye Lyn</p>
+  </footer>
+
+</body>
+
+</html>
