@@ -667,6 +667,21 @@ nav a[aria-current="page"] {
   background: var(--cs-image);
 }
 
+/* Uncropped Images: a separate class for uncropped images */
+.cs-block .cs-figure.cs-natural img {
+  width: auto;          /* use the image's own width, so it's never stretched */
+  max-width: 100%;      /* but shrink it if the column is narrower */
+  height: auto;         /* keep the original proportions */
+  aspect-ratio: auto;   /* cancel any fixed shape from other rules */
+  object-fit: contain;  /* never crop */
+  margin-inline: auto;  /* center it (works because display is already block) */
+  background: none;     /* remove the gray box behind the image */
+}
+
+.cs-block .cs-figure.cs-natural figcaption {
+  text-align: center;   /* keep the caption centered under the image */
+}
+
 .cs-block .cs-hero {
   margin-bottom: 48px;
 }

@@ -64,19 +64,13 @@
       <section class="cs-row">
         <h2 class="cs-heading">Overview</h2>
         <div class="cs-body">
-          <p class="cs-text">Certain areas in Singapore are designated as red zones, where smartphone cameras are
-            prohibited to prevent breaches of sensitive or classified information.</p>
-          <p class="cs-text">Users who choose to retain their phone cameras may face challenges ensuring their devices
-            comply with
-            security requirements, increasing the risk of accidental security violations.</p>
-          <p class="cs-text"></p>
-          <p class="cs-text">Understanding the zones:</p>
-          <ul class="cs-list cs-list-indented">
-            <li>Green zones: Non-sensitive areas where smartphone cameras are permitted.</li>
-            <li>Red zones: Restricted areas where sensitive or classified information and equipment are handled, and
-              smartphone cameras are prohibited.</li>
-          </ul>
-          <p class="cs-text">Source: Singapore National Service (NS) portal FAQ, ns.gov.sg</p>
+          <p class="cs-text">Certain areas in Singapore, such as military camps, are designated as red zones where
+            smartphone cameras are prohibited to prevent security breaches. Users who keep their phone cameras may
+            accidentally violate security rules if they forget
+            to disable them before entering a red zone.</p>
+          <p class="cs-text">To give users the choice of keeping or physically removing their
+            phone cameras, a Proof of Concept (PoC) mobile application was developed to disable cameras when required
+            and ensure compliance with security requirements in restricted zones.</p>
         </div>
       </section>
 
@@ -84,34 +78,47 @@
       <section class="cs-row">
         <h2 class="cs-heading">Challenge</h2>
         <div class="cs-body">
-          <p class="cs-text">A Proof of Concept (PoC) mobile application was developed to address camera security
-            compliance in restricted zones. However, user feedback revealed two key issues that affected its<strong>
-              usability
-              and reliability:</strong></p>
-          <p class="cs-text"><strong>1. Slow response time:</strong> Delays when disabling or re-enabling the camera
-            disrupted the user
-            experience.</p>
-          <p class="cs-text">Mapping the existing user journey revealed that users had to disable their phone cameras
-            through the app before entering restricted zones and present the disabled status to security personnel.</p>
-          <p class="cs-text">However, slow response times often caused delays at security checkpoints, contributing to
-            long queues and leaving users feeling anxious and frustrated. Over time, some users even considered
-            physically removing their phone cameras, undermining the app's intended purpose.</p>
-
-          <p class="cs-text"><strong>2. Unclear status indicators:</strong> Visual cues did not provide sufficient
-            clarity or assurance that
-            the camera had been successfully disabled.</p>
-          <p class="cs-text">Users lacked confidence in the app's status indicators and often reopened their native
-            camera apps to verify that their cameras were disabled, creating additional friction in the user journey.
+          <p class="cs-text">Although users welcomed the option to keep their phone cameras by using the app, initial
+            PoC trials revealed
+            two key issues affecting the app's<strong>
+              usability and reliability:</strong></p>
+          <p class="cs-text"><strong>1. Slow response time:</strong> The as-is journey revealed that users had to
+            disable their phone cameras through the
+            app before entering restricted zones and show the disabled status to security personnel before entering the
+            red zone.</p>
+          <p class="cs-text">However, the app's slow response delayed security checks, with users waiting up to
+            <strong>5
+              minutes for the camera to be disabled</strong>. This caused long queues and increased user anxiety and
+            frustration.
+            Some users even considered physically removing their cameras, undermining the app's intended purpose.
           </p>
 
-          <p class="cs-text">Recognizing opportunities to improve the existing Proof of Concept (PoC), we focused on two
+          <p class="cs-text"><strong>2. Unclear status indicators:</strong> The app's original design used a simple
+            toggle button to disable the camera, but its visual indicators did not clearly confirm whether the action
+            was successful.</p>
+          <p class="cs-text">As a result, users often reopened their native camera apps to verify the status, adding
+            unnecessary steps and reducing confidence in the app.
+          </p>
+
+
+        </div>
+      </section>
+
+      <!-- HMW -->
+      <section class="cs-row">
+        <h2 class="cs-heading">HMW</h2>
+        <div class="cs-body">
+          <p class="cs-text">Recognising these opportunities to improve the existing Proof of Concept (PoC), we focused
+            on two
             key challenges and translated them into the following How Might We (HMW) statements:</p>
-          <p class="cs-text"><strong>HMW #1 — Improve responsiveness: How might we reduce loading delays to create a
-              smoother
-              user experience at security checkpoints?</strong></p>
-          <p class="cs-text"><strong>HMW #2 — Improve clarity: How might we provide clear and intuitive visual feedback
-              to
-              assure users that their cameras are successfully disabled in red zones?</strong></p>
+          <p class="cs-text"><strong>HMW #1 — Improve responsiveness:</strong> How might we reduce loading delays to
+            create a
+            smoother
+            user experience at security checkpoints?</p>
+          <p class="cs-text"><strong>HMW #2 — Improve clarity:</strong> How might we provide clear and intuitive visual
+            feedback
+            to
+            assure users that their cameras are successfully disabled in red zones?</p>
         </div>
       </section>
 
@@ -119,37 +126,53 @@
       <section class="cs-row">
         <h2 class="cs-heading">Solution</h2>
         <div class="cs-body">
-          <p class="cs-text">The main objective of the camera-disabling application is to help users play their part in
-            maintaining security with ease by allowing them to disable their cameras when needed. It should also provide
-            clear
-            visibility of their camera status while in a red zone.</p>
+          <p class="cs-text">Based on user feedback and interviews with existing app users, Version 2.0 was designed to
+            address the key usability and reliability issues identified in the initial PoC. The solution aims to make
+            camera disabling easier and more reliable, while providing clear visual confirmation of camera status to
+            give users greater confidence when entering and remaining in red zones.</p>
 
-          <p class="cs-text"><strong>HMW #1: How can we improve the user experience when dealing with slow loading times in
-            security-sensitive areas?</strong></p>
+          <p class="cs-text"><strong>HMW #1: How can we improve the user experience when dealing with slow loading times
+              in
+              security-sensitive areas?</strong></p>
           <ul class="cs-list cs-list-indented">
-            <li><strong>Beacon Technology Integration:</strong> Strategically placed beacons send reminder notifications to users'
+            <li><strong>Beacon Technology Integration:</strong> Strategically placed beacons send reminder notifications
+              to users'
               phones, prompting them to disable their cameras as they approach a restricted zone.</li>
-            <li><strong>Optimized Loading Time:</strong> The app's loading time was reduced from more than 5 minutes to 3–5 seconds,
+            <li><strong>Optimized Loading Time:</strong> The app's loading time was reduced from more than 5 minutes to
+              3-5 seconds,
               minimizing delays.</li>
-            <li><strong>Clear Status Feedback:</strong> Spinning loaders with explanatory text inform users that their cameras are being
+            <li><strong>Clear Status Feedback:</strong> Spinning loaders with explanatory text inform users that their
+              cameras are being
               disabled, providing clarity and reducing uncertainty.</li>
           </ul>
 
-          <br>
 
-          <p class="cs-text"><strong>HMW #2: How might we create a more intuitive and clear visual indication to users when
-            their camera is disabled in a red zone?</strong></p>
+          <figure class="cs-figure cs-wide cs-natural">
+            <img src="images/case-study-2-solution-1.jpg" alt="Describe what the image shows" width="1600" height="900"
+              loading="lazy">
+            <figcaption class="cs-caption">Caption</figcaption>
+          </figure>
+
+
+          
+          <br>
+          <p class="cs-text"><strong>HMW #2: How might we create a more intuitive and clear visual indication to users
+              when
+              their camera is disabled in a red zone?</strong></p>
           <ul class="cs-list cs-list-indented">
-            <li><strong>Visual Confirmation:</strong> The camera image provides the first layer of assurance, indicating that the camera
+            <li><strong>Visual Confirmation:</strong> The camera image provides the first layer of assurance, indicating
+              that the camera
               has been successfully disabled.</li>
-            <li><strong>Toggle Indicator:</strong> The toggle button provides a second layer of assurance by displaying the camera's
+            <li><strong>Toggle Indicator:</strong> The toggle button provides a second layer of assurance by displaying
+              the camera's
               current state (e.g., "Disable").</li>
-            <li><strong>Clear Description:</strong> A written message provides a third layer of assurance by explicitly stating "Camera
+            <li><strong>Clear Description:</strong> A written message provides a third layer of assurance by explicitly
+              stating "Camera
               has been disabled" to confirm the action.</li>
           </ul>
 
           <figure class="cs-figure cs-wide">
-            <img src="images/case-study-1-solution.jpg" alt="Describe what the image shows" loading="lazy">
+            <img src="images/case-study-1-solution-2.jpg" alt="Describe what the image shows" loading="lazy">
             <figcaption class="cs-caption">Caption</figcaption>
           </figure>
 
