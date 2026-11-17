@@ -903,3 +903,45 @@ nav a[aria-current="page"] {
   margin-top: 8px;
   padding-left: 28px;
 }
+
+/* Outcome cards: spacing between the intro text and the cards */
+.cs-block .cs-outcomes {
+  margin-top: 32px;
+}
+
+/* Make each card a vertical flex container so the stat can sit at the bottom */
+.cs-block .cs-outcomes .cs-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* margin-top: auto pushes this block to the bottom of the card.
+   That keeps all three stats on one line even if the text above is different lengths. */
+.cs-block .cs-stat {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+/* The small "5 min →" above the big number */
+.cs-block .cs-stat-before {
+  margin: 0 0 4px;
+  font-size: 0.875rem;
+  color: var(--cs-muted);
+}
+
+/* The caption under the big number */
+.cs-block .cs-stat-caption {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--cs-muted);
+}
+
+/* Card 3: dashed border = what's next, not yet delivered */
+.cs-block .cs-card-next {
+  border-style: dashed;
+}
+
+/* Smaller stat text inside the outcome cards so each one fits on a single line */
+.cs-block .cs-outcomes .cs-metric {
+  font-size: 1.5rem;
+}
